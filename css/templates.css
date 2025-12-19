@@ -1,0 +1,106 @@
+:root {
+    /* ОСНОВНЫЕ ЦВЕТА */
+    --color-background: #FFFDF8;
+    --color-second_background: #EEEAE3;
+    --color-buttons_links: #0058DD;
+    --color-dark_background: #031F39;
+    --color-accents: #FF950A;
+}
+/* Блок шаблонов */
+.templates-section {
+    padding: 80px 0;
+    background-color: var(--color-background);
+}
+
+/* Главный заголовок - ОРАНЖЕВЫЙ */
+.templates-section .section-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-accents); /* ОРАНЖЕВЫЙ */
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Карточка шаблона - ТЕМНО-СИНИЙ фон */
+.template-card {
+    background-color: var(--color-dark_background); /* ТЕМНО-СИНИЙ */
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 4px 7px 6.1px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.template-card hr {
+    width: 70%;
+    height: 1px;
+    background-color: var(--color-background); /* БЕЛАЯ с 30% прозрачностью */
+    border: none;
+    margin: 15px auto;
+    opacity: 1;
+}
+
+/* Заголовок шаблона */
+.template-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-accents);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* Описание шаблона  */
+.template-description {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9); /* БЕЛЫЙ 90% */
+    line-height: 1.4;
+    flex-grow: 0;
+}
+
+/* Список особенностей - БЕЛЫЙ */
+.template-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.template-features li {
+    font-size: 20px;
+    color: var(--color-background); /* БЕЛЫЙ 80% */
+    margin-bottom: 8px;
+    line-height: 1.2;
+    padding-left: 20px;
+    position: relative;
+}
+
+.template-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-background); /* ОРАНЖЕВЫЙ для точек */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Цена - ОРАНЖЕВАЯ */
+.template-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-accents); /* ОРАНЖЕВАЯ */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
